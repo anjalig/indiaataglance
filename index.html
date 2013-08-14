@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>India at a Glance</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<link rel="stylesheet" href="style.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+	<!-- Home -->
+	<div id="home" data-role="page">
+	 <div data-theme="a" data-role="header">
+	        <div data-role="navbar" data-iconpos="top">
+	            <ul>
+	                <li>
+	                    <a href="index.html" data-transition="fade" data-theme="" data-icon="home">
+	                        Home
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="about.html" data-transition="fade" data-theme="" data-icon="info">
+	                        About
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="feedback.php" data-transition="fade" data-theme="" data-icon="star">
+	                        Feedback
+	                    </a>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	    <div data-role="content">
+	      <div class="ui-grid-a">
+	        <div class="ui-block-a">
+	              <h2><a href="#search_hotel"><img src="img/hotel.png" title="Search Hotel" /></a></h2>
+	        </div>
+	        <div class="ui-block-b">
+	              <h2><a href="#search_tops"><img src="img/tour_operator.png" title="Search Tour Operators" /></a></h2>
+	        </div>
+	        <div class="ui-block-a grid">
+	              <h2><a href="#office"><img src="img/tourist_directory.png" title="Tourist Office Directory" /></a></h2>
+	        </div>
+	        <div class="ui-block-b grid">
+	              <h2><a href="#awards"><img src="img/tourist_awards.png" title="Tourism Awards" /></a></h2>
+	        </div>
+	      </div> 
+		</div>
+		<!-- Search Hotel panel content goes here -->
+		<div data-role="panel" id="search_hotel" data-theme="a">
+			<h1 class="search_hotel_icon">Search Hotel</h1>
+			<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;">
+				<form action="hotelList.php" method="POST">
+					<label>Select State</label>
+					<select name="sstate">
+					<option value="00"> All </option>
+					<option value="07">Delhi</option>
+					<option value="23"> Madhya Pradesh </option>
+					<option value="32"> Kerala   </option>
+					<option value="30"> Goa  </option>
+					<option value="29"> Karnataka   </option>
+					<option value="02"> Himachal Pradesh </option>
+					<option value="01"> Jammu and Kashmir </option>
+					<option value="08"> Rajasthan </option>
+					<option value="33"> Tamil Nadu </option>
+					<option value="24"> Gujrat </option>
+					<option value="06"> Haryana </option>
+					<option value="34"> Pondicherry </option>
+					<option value="11"> Sikkim </option>
+					<option value="05"> Uttrakhand </option>
+					<option value="34"> Pudducherry </option>
+					<option value="19"> West Bengal </option>
+					<option value="21"> orissa </option>
+					<option value="03"> Punjab </option>
+					<option value="09"> Uttar Pradesh </option>
+					<option value="04"> Chandigarh </option>
+					<option value="18"> Assam </option>
+					<option value="17"> Meghalya </option>
+					<option value="27"> Maharashtra </option>
+					<option value="35"> Andaman and Nicobar </option>
+					<option value="10"> Bihar </option>
+					<option value="20"> Jharkhand </option>
+					<option value="14"> Manipur </option>
+					</select>
+					<label>Select Type</label>
+					<select name="stype">
+					<option value="00"> All Types </option>
+					<option value="HB">Heritage Basic</option>
+					<option value="HC"> Heritage Classic </option>
+					<option value="HG"> Heritage Grand  </option>
+					<option value="S5"> 5 Star </option>
+					<option value="SD"> 5 Star Delux </option>
+					<option value="S4"> 4 Star  </option>
+					</select>
+					<fieldset class="ui-grid-a">
+							<div class="ui-block-a"><button type="reset" data-theme="d">Reset</button></div>
+							<div class="ui-block-b"><input type="submit" data-theme="a" value="Search"/></div>
+					</fieldset>
+				</form>
+			</div>
+		</div><!-- /panel -->
+        <!-- Search Tour Operator panel content goes here -->
+        <div data-role="panel" id="search_tops" data-theme="a">
+			<h1 class="search_operator_icon">Search Tour Operators</h1>
+			<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;">
+				<form action="tlist.php" method="POST">
+					<label>Select State</label>
+					<select name="tstate">
+					<option value="00"> All </option>
+					<option value="07">Delhi</option>
+					<option value="23"> Madhya Pradesh </option>
+					<option value="32"> Kerala   </option>
+					<option value="30"> Goa  </option>
+					<option value="29"> Karnataka   </option>
+					<option value="02"> Himachal Pradesh </option>
+					<option value="01"> Jammu and Kashmir </option>
+					<option value="08"> Rajasthan </option>
+					<option value="33"> Tamil Nadu </option>
+					<option value="24"> Gujrat </option>
+					<option value="06"> Haryana </option>
+					<option value="34"> Pondicherry </option>
+					<option value="11"> Sikkim </option>
+					<option value="05"> Uttrakhand </option>
+					<option value="34"> Pudducherry </option>
+					<option value="19"> West Bengal </option>
+					<option value="21"> orissa </option>
+					<option value="03"> Punjab </option>
+					<option value="09"> Uttar Pradesh </option>
+					<option value="04"> Chandigarh </option>
+					<option value="18"> Assam </option>
+					<option value="17"> Meghalya </option>
+					<option value="27"> Maharashtra </option>
+					<option value="35"> Andaman and Nicobar </option>
+					<option value="10"> Bihar </option>
+					<option value="20"> Jharkhand </option>
+					<option value="14"> Manipur </option>
+					</select>
+					<label>Select Type</label>
+					<select name="ttype">
+					<option value="00"> All Types </option>
+					<option value="AT">Adventure Tour Operator</option>
+					<option value="DT"> Domestic Tour Operator </option>
+					<option value="IT"> Inbound Tour Operator  </option>
+					<option value="TA"> Travel Agent</option>
+					<option value="TT"> Tourist Transport Operator </option>
+					</select>
+					<fieldset class="ui-grid-a">
+							<div class="ui-block-a"><button type="reset" data-theme="d">Reset</button></div>
+							<div class="ui-block-b"><input type="submit" data-theme="a" value="Search"/></div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<!-- Tourism Offices -->
+		<div data-role="panel" id="office" data-theme="a">
+			<h1 class="tourist_directory_icon">Indian Tourist Offices</h1>
+			<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;">
+			<div class="ui-grid-a">
+	        <div class="ui-block-a">
+	              <h2><a href="indian.php"><img src="img/tourist_directory32.png" title="Indian" /> <h5> Indian </h5></a></h2>
+	        </div>
+	        <div class="ui-block-b">
+	              <h2><a href="overseas.php"><img src="img/tourist_directory32.png" title="Overseas" /> <h5> Overseas </h5></a></h2>
+	        </div>
+			</div>
+		</div>
+		</div>
+		<!-- Awards -->
+		<div data-role="panel" id="awards" data-theme="a">
+			<h1 class="tourism_awards_icon">Indian Tourism Awards</h1>
+			<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;">
+			<div class="ui-grid-a">
+	        <div class="ui-block-a">
+	              <h2><a href="yr1.php"><img src="img/tourist_awards32.PNG"><h5>2007-08</h5></a></h2>
+	        </div>
+	        <div class="ui-block-b">
+	              <h2><a href="yr2.php"><img src="img/tourist_awards32.PNG"><h5>2008-09</h5></a></h2>
+	        </div>
+				<div class="ui-block-b">
+	              <h2><a href="yr2.php"><img src="img/tourist_awards32.PNG"><h5>2009-10</h5></a></h2>
+	        </div>
+			</div>
+		</div>
+		</div>
+	    <div data-theme="a" data-role="footer" data-position="fixed">
+	            <h3 class="ui-title" role="heading" aria-level="1">
+	                &copy; 2013, Team Neophytes.
+	            </h3>
+	    </div>
+	</div>
+</body>
+</html>

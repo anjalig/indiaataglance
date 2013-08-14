@@ -1,0 +1,83 @@
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+      padding-top: 0.2em;
+      padding-bottom: 0.2em;
+  }
+  .ui-li-desc {
+    white-space: normal !important;
+  }
+  .ui-panel-content-wrap, .ui-page, .ui-content{
+    background:#212121;
+    color: #FFFFFF;
+}
+  .content-primary {
+    margin: 20px auto 0 auto;
+  }
+.ui-header .ui-title{
+	display: block;
+	font-size: 16px;
+	margin: 0.6em 2% 0.8em;
+	outline: 0 none !important;
+	overflow: hidden;
+	text-align: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.search_operator_icon.ui-title{
+    background:url('img/tour_operator32.png') left top no-repeat;
+	padding: 5px 26px 0;
+}
+.search_operator_icon.ui-title{
+    background:url('img/tour_operator32.png') left top no-repeat;
+	padding: 5px 26px 0;
+}
+.search_hotel_icon.ui-title{
+    background:url('img/hotel32.png') left top no-repeat;
+	padding: 5px 26px 0;
+}
+.tourist_directory_icon.ui-title{
+    background:url('img/tourist_directory32.png') left top no-repeat;
+	padding: 5px 35px 0;
+}
+.tourism_awards_icon.ui-title{
+    background:url('img/tourist_awards32.png') left top no-repeat;
+	padding: 5px 20px 0;
+}
+.ui-grid-a div{
+	text-align: center;
+}
+.ui-block-a{
+border-right: solid 1px;
+}
+.grid{
+border-top: solid 1px;
+}
+.ui-grid-a img{
+	width: 25%;
+}
+@media (min-width:35em){
+
+/* wrap on wide viewports once open */
+
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push.ui-panel-content-fixed-toolbar-position-left,
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal.ui-panel-content-fixed-toolbar-position-left,
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-push.ui-panel-content-wrap-position-left,
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-reveal.ui-panel-content-wrap-position-left {
+    margin-right: 17em;
+}
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push.ui-panel-content-fixed-toolbar-position-right,
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal.ui-panel-content-fixed-toolbar-position-right,
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-push.ui-panel-content-wrap-position-right,
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-reveal.ui-panel-content-wrap-position-right {
+    margin-left: 17em;
+}
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push,
+.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal {
+    width: auto;	
+}
+
+/* disable "dismiss" on wide viewports */
+.ui-responsive-panel .ui-panel-dismiss-display-push {
+    display: none;
+}
+    	
+}
